@@ -47,8 +47,6 @@ class _Page2State extends State<Page2> {
                               "for myself.",
                           color: AppColor.whiteColor, fontsize: 12,
                           fontWeight: FontWeight.w400),
-
-
                     ],),
                 )
                 ),
