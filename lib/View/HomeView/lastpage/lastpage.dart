@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
 import 'package:portfolio/Controller/Widgets/smallContainerWidget/smallContainerWidget.dart';
-import 'package:portfolio/Controller/Widgets/textFormContainer/textFormContainer.dart';
 import 'package:portfolio/Controller/Widgets/textWidget/textWidget.dart';
 
 class LastPage extends StatefulWidget {
@@ -87,7 +86,7 @@ class _LastPageState extends State<LastPage> {
                     Container(height: 430,width: 600,
                     decoration: BoxDecoration(
                       color: AppColor.greyColor,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(8),
                       border: Border.all(color: AppColor.greyColor)
                     ),child: Stack(
                       children: [

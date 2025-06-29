@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
 import 'package:portfolio/Controller/Widgets/appAssets/appAssets.dart';
+import 'package:portfolio/Controller/Widgets/smallButton/smallButton.dart';
 import 'package:portfolio/Controller/Widgets/textWidget/textWidget.dart';
 
 class Page1 extends StatefulWidget {
@@ -52,53 +53,23 @@ class _Page1State extends State<Page1> {
                       fontWeight: FontWeight.w600),
                   SizedBox(height: 20,),
                   Row(children: [
-                    Container(height: 45,width: 45,
-                    decoration: BoxDecoration(
-                     color: AppColor.greyColor,
-                     borderRadius: BorderRadius.circular(4),
-                     border: Border.all(color: AppColor.greyColor)
-                    ),child: Icon(
-                        Icons.facebook_outlined,
-                        color: AppColor.whiteColor,),
-                    ),
+                    Smallbutton(child: Icon(
+                      Icons.facebook_outlined,
+                      color: AppColor.whiteColor,),),
                     SizedBox(width: 10,),
-                    Container(height: 45,width: 45,
-                      decoration: BoxDecoration(
-                          color: AppColor.greyColor,
-                          borderRadius: BorderRadius.circular(4),
-                          border: Border.all(color: AppColor.greyColor)
-                      ),child: Center(
-                        child: FaIcon(
-                          FontAwesomeIcons.twitter,
-                          color: AppColor.whiteColor,
-                          size: 20,
-                        ),
-                      ),
-                    ),
+                    Smallbutton(child: FaIcon(
+                      FontAwesomeIcons.twitter,
+                      color: AppColor.whiteColor,
+                      size: 20,
+                    ),),
                     SizedBox(width: 10,),
-                    Container(height: 45,width: 45,
-                      decoration: BoxDecoration(
-                          color: AppColor.greyColor,
-                          borderRadius: BorderRadius.circular(4),
-                          border: Border.all(color: AppColor.greyColor)
-                      ),child: Center(
-                        child: FaIcon(
-                            FontAwesomeIcons.linkedin,
-                            color: AppColor.whiteColor,),
-                      )
-                    ),
+                    Smallbutton(child: FaIcon(
+                      FontAwesomeIcons.linkedin,
+                      color: AppColor.whiteColor,),),
                     SizedBox(width: 10,),
-                    Container(height: 45,width: 45,
-                      decoration: BoxDecoration(
-                          color: AppColor.greyColor,
-                          borderRadius: BorderRadius.circular(4),
-                          border: Border.all(color: AppColor.greyColor)
-                      ),child: Center(
-                          child: FaIcon(
-                            FontAwesomeIcons.youtube,
-                            color: AppColor.whiteColor,),
-                        )
-                    )
+                    Smallbutton(child: FaIcon(
+                      FontAwesomeIcons.youtube,
+                      color: AppColor.whiteColor,),)
                   ],),
                   SizedBox(height: 20,),
                   Row(

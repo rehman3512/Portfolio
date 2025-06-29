@@ -11,7 +11,7 @@ class SmallContainerWidget extends StatelessWidget {
       decoration: BoxDecoration(
           color: AppColor.greyColor,
           border: Border.all(color: AppColor.lightGreyColor),
-          borderRadius: BorderRadius.circular(5)
+          borderRadius: BorderRadius.circular(8)
       ),child: child,
     );
   }
