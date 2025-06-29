@@ -89,6 +89,142 @@ class _LastPageState extends State<LastPage> {
                       color: AppColor.greyColor,
                       borderRadius: BorderRadius.circular(5),
                       border: Border.all(color: AppColor.greyColor)
+                    ),child: Stack(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 30),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Container(height: 45,width: 250,
+                                        decoration: BoxDecoration(
+                                            color: AppColor.lightGreyColor,
+                                            border: Border.all(color: AppColor.greyColor),
+                                            borderRadius: BorderRadius.circular(8)
+                                        ),child: Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                                          child: TextFormField(
+                                            style: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                                fontWeight: FontWeight.w600),
+                                            decoration: InputDecoration(
+                                              border: InputBorder.none,
+                                              hintText: "Enter Your Name",
+                                              hintStyle: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                                  fontWeight: FontWeight.w600),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                  SizedBox(width: 20,),
+                                  Container(height: 45,width: 250,
+                                    decoration: BoxDecoration(
+                                        color: AppColor.lightGreyColor,
+                                        border: Border.all(color: AppColor.greyColor),
+                                        borderRadius: BorderRadius.circular(8)
+                                    ),child: Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                                      child: TextFormField(
+                                        style: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                            fontWeight: FontWeight.w600),
+                                        decoration: InputDecoration(
+                                          border: InputBorder.none,
+                                          hintText: "Enter Your Phone",
+                                          hintStyle: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                              fontWeight: FontWeight.w600),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 20,),
+                              Row(
+                                children: [
+                                  Container(height: 45,width: 250,
+                                    decoration: BoxDecoration(
+                                        color: AppColor.lightGreyColor,
+                                        border: Border.all(color: AppColor.greyColor),
+                                        borderRadius: BorderRadius.circular(8)
+                                    ),child: Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                                      child: TextFormField(
+                                        style: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                            fontWeight: FontWeight.w600),
+                                        decoration: InputDecoration(
+                                          border: InputBorder.none,
+                                          hintText: "Enter Your Email",
+                                          hintStyle: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                              fontWeight: FontWeight.w600),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: 20,),
+                                  Container(height: 45,width: 250,
+                                    decoration: BoxDecoration(
+                                        color: AppColor.lightGreyColor,
+                                        border: Border.all(color: AppColor.greyColor),
+                                        borderRadius: BorderRadius.circular(8)
+                                    ),child: Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                                      child: TextFormField(
+                                        style: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                            fontWeight: FontWeight.w600),
+                                        decoration: InputDecoration(
+                                          border: InputBorder.none,
+                                          hintText: "Enter Your Subject",
+                                          hintStyle: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                              fontWeight: FontWeight.w600),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15,),
+                              Container(height: 180,width: 520,
+                              decoration: BoxDecoration(
+                                color: AppColor.lightGreyColor,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(color: AppColor.lightGreyColor)
+                              ),child: Padding(padding: EdgeInsets.symmetric(horizontal: 10),
+                                child: TextFormField(
+                                  maxLines: null,
+                                  style: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                      fontWeight: FontWeight.w600),
+                                  decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    hintText: "Type Your Message",
+                                    hintStyle: TextStyle(color: AppColor.whiteColor,fontSize: 12,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                ),),
+                              ),
+                              SizedBox(height: 15,),
+                              Align(alignment: Alignment.center,
+                              child: Container(height: 45,width: 250,
+                                decoration: BoxDecoration(
+                                    color: AppColor.lightGreyColor,
+                                    border: Border.all(color: AppColor.greyColor),
+                                    borderRadius: BorderRadius.circular(8)
+                                ),child: Center(
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        TextWidget(text: "Send Message", color: AppColor.whiteColor,
+                                            fontsize: 12, fontWeight: FontWeight.w600),
+                                        SizedBox(width: 10,),
+                                        Icon(Icons.telegram_outlined,color: AppColor.whiteColor,)
+                                      ],
+                                    ),
+                                  )
+                              ),)
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                     )
                   ],)
