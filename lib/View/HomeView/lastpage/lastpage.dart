@@ -34,13 +34,52 @@ class _LastPageState extends State<LastPage> {
                   children: [
                   Column(
                     children: [
-                    SmallContainerWidget(child: Column(children: [],)),
+                    SmallContainerWidget(child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.map_outlined,color: AppColor.redColor,
+                          size: 25,),
+                        SizedBox(height: 10,),
+                        TextWidget(text: "REHMAN DEVELOPER", color: AppColor.whiteColor,
+                            fontsize: 8, fontWeight: FontWeight.w600)
+                      ],)
+                    ),
                     SizedBox(height: 10,),
-                    SmallContainerWidget(child: Column(children: [],)),
+                    SmallContainerWidget(child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.phone_outlined,color: AppColor.redColor,
+                        size: 25,),
+                        SizedBox(height: 10,),
+                        TextWidget(text: "+92-3499-856-995", color: AppColor.whiteColor,
+                            fontsize: 8, fontWeight: FontWeight.w600)
+                    ],)),
                     SizedBox(height: 10,),
-                    SmallContainerWidget(child: Column(children: [],)),
+                    SmallContainerWidget(child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.email_outlined,color: AppColor.redColor,
+                        size: 25,),
+                        SizedBox(height: 10,),
+                        TextWidget(text: "rehmankh2256@gmail.com", color: AppColor.whiteColor,
+                            fontsize: 8, fontWeight: FontWeight.w600)
+                      ],)
+                    ),
                     SizedBox(height: 10,),
-                    SmallContainerWidget(child: Column(children: [],)),
+                    SmallContainerWidget(child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.check_outlined,color: AppColor.redColor,
+                          size: 25,),
+                        SizedBox(height: 10,),
+                        TextWidget(text: "Freelance Available", color: AppColor.whiteColor,
+                            fontsize: 8, fontWeight: FontWeight.w600)
+                      ],)
+                    ),
                   ],),
                   SizedBox(width: 20,),
                   Column(children: [

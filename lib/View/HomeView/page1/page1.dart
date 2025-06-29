@@ -106,7 +106,7 @@ class _Page1State extends State<Page1> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          TextWidget(text: "0+", color: AppColor.whiteColor,
+                          TextWidget(text: "1+", color: AppColor.whiteColor,
                               fontsize: 16, fontWeight: FontWeight.w600),
                           SizedBox(height: 10,),
                           TextWidget(text: "YEAR OF EXPERIENCE",
@@ -118,7 +118,7 @@ class _Page1State extends State<Page1> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          TextWidget(text: "0+", color: AppColor.whiteColor,
+                          TextWidget(text: "5+", color: AppColor.whiteColor,
                               fontsize: 16, fontWeight: FontWeight.w600),
                           SizedBox(height: 10,),
                           TextWidget(text: "GLOBAL WORKING CLIENT",
@@ -130,7 +130,7 @@ class _Page1State extends State<Page1> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          TextWidget(text: "0+", color: AppColor.whiteColor,
+                          TextWidget(text: "3+", color: AppColor.whiteColor,
                               fontsize: 16, fontWeight: FontWeight.w600),
                           SizedBox(height: 10,),
                           TextWidget(text: "AWARDS WIN",
