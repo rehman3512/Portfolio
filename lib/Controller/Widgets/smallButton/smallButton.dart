@@ -23,9 +23,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
 
-// class Smallbutton extends StatelessWidget {
-//   final Widget? child;
-//   const Smallbutton({super.key,required this.child});
+class Smallbutton extends StatelessWidget {
+  final Widget? child;
+  const Smallbutton({super.key,required this.child});
 //
 //   @override
 //   Widget build(BuildContext context) {
