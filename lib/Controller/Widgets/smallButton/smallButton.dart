@@ -30,11 +30,11 @@ class Smallbutton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell( onTap: (){},
-//       child: Container(height: 45,width: 45,
-//           decoration: BoxDecoration(
-//               color: AppColor.greyColor,
-//               borderRadius: BorderRadius.circular(6),
-//               border: Border.all(color: AppColor.greyColor)
+      child: Container(height: 45,width: 45,
+          decoration: BoxDecoration(
+              color: AppColor.greyColor,
+              borderRadius: BorderRadius.circular(6),
+              border: Border.all(color: AppColor.greyColor)
 //           ),child: Center(
 //               child: child
 //           )
