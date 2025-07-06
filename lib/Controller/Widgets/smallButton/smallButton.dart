@@ -35,10 +35,10 @@ class Smallbutton extends StatelessWidget {
               color: AppColor.greyColor,
               borderRadius: BorderRadius.circular(6),
               border: Border.all(color: AppColor.greyColor)
-//           ),child: Center(
-//               child: child
-//           )
-//       ),
-//     );
-//   }
-// }
+          ),child: Center(
+              child: child
+          )
+      ),
+    );
+  }
+}
