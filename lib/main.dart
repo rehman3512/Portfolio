@@ -4,6 +4,7 @@ import 'package:portfolio/Controller/Widgets/textWidget/textWidget.dart';
 import 'package:portfolio/View/HomeView/lastpage/lastpage.dart';
 import 'package:portfolio/View/HomeView/page1/page1.dart';
 import 'package:portfolio/View/HomeView/page2/page2.dart';
+import 'package:portfolio/mainscreenview.dart';
 
 void main()
 {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:
+      home: Page2()
     );
   }
 }
