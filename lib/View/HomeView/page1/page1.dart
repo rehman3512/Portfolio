@@ -67,23 +67,35 @@ class _Page1State extends State<Page1> {
                             fontWeight: FontWeight.w600),
                         SizedBox(height: 20,),
                         Row(children: [
-                          Smallbutton(child: Icon(
-                            Icons.facebook_outlined,
-                            color: AppColor.whiteColor,),),
+                          GestureDetector(
+                            onTap: (){},
+                            child: Smallbutton(child: Icon(
+                              Icons.facebook_outlined,
+                              color: AppColor.whiteColor,),),
+                          ),
                           SizedBox(width: 10,),
-                          Smallbutton(child: FaIcon(
-                            FontAwesomeIcons.twitter,
-                            color: AppColor.whiteColor,
-                            size: 20,
-                          ),),
+                          GestureDetector(
+                            onTap: (){},
+                            child: Smallbutton(child: FaIcon(
+                              FontAwesomeIcons.twitter,
+                              color: AppColor.whiteColor,
+                              size: 20,
+                            ),),
+                          ),
                           SizedBox(width: 10,),
-                          Smallbutton(child: FaIcon(
-                            FontAwesomeIcons.linkedin,
-                            color: AppColor.whiteColor,),),
+                          InkWell(
+                            onTap: (){},
+                            child: Smallbutton(child: FaIcon(
+                              FontAwesomeIcons.linkedin,
+                              color: AppColor.whiteColor,),),
+                          ),
                           SizedBox(width: 10,),
-                          Smallbutton(child: FaIcon(
-                            FontAwesomeIcons.youtube,
-                            color: AppColor.whiteColor,),)
+                          InkWell(
+                            onTap: (){},
+                            child: Smallbutton(child: FaIcon(
+                              FontAwesomeIcons.youtube,
+                              color: AppColor.whiteColor,),),
+                          )
                         ],),
                         SizedBox(height: 20,),
                         Row(

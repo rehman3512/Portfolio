@@ -111,7 +111,9 @@ class _LastPageState extends State<LastPage> {
                                       children: [
                                         Row(
                                           children: [
-                                            Container(height: 45,width: 250,
+                                            Container(
+                                              height: MediaQuery.of(context).size.height*0.08,
+                                              width: MediaQuery.of(context).size.width*0.2,
                                               decoration: BoxDecoration(
                                                   color: AppColor.lightGreyColor,
                                                   border: Border.all(color: AppColor.greyColor),
@@ -131,7 +133,9 @@ class _LastPageState extends State<LastPage> {
                                               ),
                                             ),
                                             SizedBox(width: 20,),
-                                            Container(height: 45,width: 250,
+                                            Container(
+                                              height: MediaQuery.of(context).size.height*0.08,
+                                              width: MediaQuery.of(context).size.width*0.2,
                                               decoration: BoxDecoration(
                                                   color: AppColor.lightGreyColor,
                                                   border: Border.all(color: AppColor.greyColor),
@@ -152,10 +156,12 @@ class _LastPageState extends State<LastPage> {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(height: 20,),
+                                        SizedBox(height: 15,),
                                         Row(
                                           children: [
-                                            Container(height: 45,width: 250,
+                                            Container(
+                                              height: MediaQuery.of(context).size.height*0.08,
+                                              width: MediaQuery.of(context).size.width*0.2,
                                               decoration: BoxDecoration(
                                                   color: AppColor.lightGreyColor,
                                                   border: Border.all(color: AppColor.greyColor),
@@ -175,7 +181,9 @@ class _LastPageState extends State<LastPage> {
                                               ),
                                             ),
                                             SizedBox(width: 20,),
-                                            Container(height: 45,width: 250,
+                                            Container(
+                                              height: MediaQuery.of(context).size.height*0.08,
+                                              width: MediaQuery.of(context).size.width*0.2,
                                               decoration: BoxDecoration(
                                                   color: AppColor.lightGreyColor,
                                                   border: Border.all(color: AppColor.greyColor),
@@ -197,7 +205,9 @@ class _LastPageState extends State<LastPage> {
                                           ],
                                         ),
                                         SizedBox(height: 15,),
-                                        Container(height: 180,width: 520,
+                                        Container(
+                                          height: MediaQuery.of(context).size.height*0.32,
+                                          width: MediaQuery.of(context).size.width*0.48,
                                           decoration: BoxDecoration(
                                               color: AppColor.lightGreyColor,
                                               borderRadius: BorderRadius.circular(8),
@@ -217,7 +227,9 @@ class _LastPageState extends State<LastPage> {
                                         ),
                                         SizedBox(height: 15,),
                                         Align(alignment: Alignment.center,
-                                          child: Container(height: 45,width: 250,
+                                          child: Container(
+                                              height: MediaQuery.of(context).size.height*0.06,
+                                              width: MediaQuery.of(context).size.width*0.17,
                                               decoration: BoxDecoration(
                                                   color: AppColor.lightGreyColor,
                                                   border: Border.all(color: AppColor.greyColor),

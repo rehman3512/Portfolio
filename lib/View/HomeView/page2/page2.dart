@@ -32,7 +32,7 @@ class _Page2State extends State<Page2> {
             width: MediaQuery.of(context).size.width*1,
             color: AppColor.greyColor,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 90,vertical: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 100,vertical: 20),
               child: Stack(children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

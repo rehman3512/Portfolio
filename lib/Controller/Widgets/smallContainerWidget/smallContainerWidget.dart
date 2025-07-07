@@ -7,7 +7,9 @@ class SmallContainerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(height: 100,width: 200,
+    return Container(
+        height: MediaQuery.of(context).size.height*0.17,
+        width: MediaQuery.of(context).size.width*0.2,
       decoration: BoxDecoration(
           color: AppColor.greyColor,
           border: Border.all(color: AppColor.lightGreyColor),
