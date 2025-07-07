@@ -15,8 +15,10 @@ class Page1 extends StatefulWidget {
 class _Page1State extends State<Page1> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container( height: double.infinity,width: double.infinity,
+    return ResponseWidget(
+      descktop: Container(
+        height: MediaQuery.of(context).size.height*0.95,
+        width: MediaQuery.of(context).size.width*1,
       color: AppColor.lightGreyColor,
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -112,7 +114,7 @@ class _Page1State extends State<Page1> {
                   )
 
               ],),
-              SizedBox( width: 20,),
+              Spacer(),
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
