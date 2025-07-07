@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
 
 class MainPage1 extends StatelessWidget {
   final Widget mobile;
@@ -23,5 +24,36 @@ class MainPage1 extends StatelessWidget {
           return desktop;
         }
     });
+  }
+}
+
+
+class ScreenView extends StatefulWidget {
+  const ScreenView({super.key});
+
+  @override
+  State<ScreenView> createState() => _ScreenViewState();
+}
+
+class _ScreenViewState extends State<ScreenView> {
+  @override
+  Widget build(BuildContext context) {
+    return MainPage1(
+        mobile: Container(
+          height: double.infinity,
+          width: double.infinity,
+          color: AppColor.greyColor,
+        ),
+        tablet: Container(
+          height: double.infinity,
+          width: double.infinity,
+          color: AppColor.redColor,
+        ),
+        desktop: Container(
+          height: double.infinity,
+          width: double.infinity,
+          color: AppColor.blackColor,
+        )
+    );
   }
 }
