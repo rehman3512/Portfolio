@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:portfolio/routes/routes.dart';
 
 
@@ -13,11 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      // home:
-      initialRoute: AppRoutes.Page1Screen,
-      getPages: AppRoutes.routes,
+       routerConfig: GoRoutes.router,
+
+       // home:
+      // initialRoute: AppRoutes.LastPageScreen,
+      // getPages: AppRoutes.routes,
 
     );
   }

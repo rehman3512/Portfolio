@@ -3,6 +3,7 @@ import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
 import 'package:portfolio/Controller/Widgets/ResponseWidget/ResponseWidget.dart';
 import 'package:portfolio/Controller/Widgets/smallContainerWidget/smallContainerWidget.dart';
 import 'package:portfolio/Controller/Widgets/textWidget/textWidget.dart';
+import 'package:portfolio/mainscreenview.dart';
 
 class LastPage extends StatefulWidget {
   const LastPage({super.key});

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
 import 'package:portfolio/Controller/Widgets/ResponseWidget/ResponseWidget.dart';
 import 'package:portfolio/Controller/Widgets/appAssets/appAssets.dart';
 import 'package:portfolio/Controller/Widgets/smallButton/smallButton.dart';
 import 'package:portfolio/Controller/Widgets/textWidget/textWidget.dart';
+import 'package:portfolio/mainscreenview.dart';
+import 'package:portfolio/routes/routes.dart';
 
 class Page1 extends StatefulWidget {
   const Page1({super.key});
@@ -92,7 +95,12 @@ class _Page1State extends State<Page1> {
                           ),
                           SizedBox(width: 10,),
                           InkWell(
-                            onTap: (){},
+                            onTap: (){
+                              GoRoutes.Page2Screen;
+                              setState(() {
+
+                              });
+                            },
                             child: Smallbutton(child: FaIcon(
                               FontAwesomeIcons.linkedin,
                               color: AppColor.whiteColor,),),
