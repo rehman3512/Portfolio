@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
-import 'package:portfolio/Controller/Widgets/textWidget/textWidget.dart';
-import 'package:portfolio/View/HomeView/lastpage/lastpage.dart';
-import 'package:portfolio/View/HomeView/page1/page1.dart';
-import 'package:portfolio/View/HomeView/page2/page2.dart';
-import 'package:portfolio/mainscreenview.dart';
+import 'package:get/get.dart';
+import 'package:portfolio/routes/routes.dart';
+
 
 void main()
 {
@@ -16,9 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Page1()
+      // home:
+      initialRoute: AppRoutes.Page1Screen,
+      getPages: AppRoutes.routes,
+
     );
   }
 }

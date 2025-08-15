@@ -15,7 +15,7 @@ class _MainScreenViewState extends State<MainScreenView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
+        // scrollDirection: Axis.vertical,
         child: Column(
           children: [
             Page1(),

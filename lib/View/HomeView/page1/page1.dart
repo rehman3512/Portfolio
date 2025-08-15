@@ -19,7 +19,7 @@ class _Page1State extends State<Page1> {
     return Scaffold(
         body: ResponseWidget(
             mobile: Container(
-              height: MediaQuery.of(context).size.height*1,
+              height: MediaQuery.of(context).size.height*095,
               width: MediaQuery.of(context).size.width*1,
               decoration: BoxDecoration(
                 color: AppColor.greyColor,
