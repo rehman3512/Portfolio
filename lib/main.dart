@@ -12,13 +12,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-       routerConfig: GoRoutes.router,
+    return GetMaterialApp(
+      // MaterialApp.router(
+    //   debugShowCheckedModeBanner: false,
+    //    routerConfig: GoRoutes.router,
 
        // home:
-      // initialRoute: AppRoutes.LastPageScreen,
-      // getPages: AppRoutes.routes,
+      initialRoute: AppRoutes.LastPageScreen,
+      getPages: AppRoutes.routes,
 
     );
   }
