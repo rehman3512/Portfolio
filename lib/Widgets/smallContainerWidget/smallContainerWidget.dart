@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
+import 'package:portfolio/Constants/AppColor/appColor.dart';
 
 class SmallContainerWidget extends StatelessWidget {
   final Widget? child;

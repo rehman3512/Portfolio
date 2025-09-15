@@ -1,170 +1,252 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';
-import 'package:portfolio/Controller/Widgets/AppColor/appColor.dart';
-import 'package:portfolio/Controller/Widgets/ResponseWidget/ResponseWidget.dart';
-import 'package:portfolio/Controller/Widgets/appAssets/appAssets.dart';
-import 'package:portfolio/Controller/Widgets/smallButton/smallButton.dart';
-import 'package:portfolio/Controller/Widgets/textWidget/textWidget.dart';
-import 'package:portfolio/mainscreenview.dart';
+import 'package:portfolio/Constants/AppColor/appColor.dart';
+import 'package:portfolio/Constants/appAssets/appAssets.dart';
+import 'package:portfolio/Controller/HomeController/homecontroller.dart';
+import 'package:portfolio/Widgets/ResponseWidget/ResponseWidget.dart';
+import 'package:portfolio/Widgets/smallButton/smallButton.dart';
+import 'package:portfolio/Widgets/textWidget/textWidget.dart';
 import 'package:portfolio/routes/routes.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class Page1 extends StatefulWidget {
-  const Page1({super.key});
+class Page1 extends StatelessWidget {
+  Page1({super.key});
 
-  @override
-  State<Page1> createState() => _Page1State();
-}
+  final HomeController controller = Get.put(HomeController());
 
-class _Page1State extends State<Page1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: ResponseWidget(
-            mobile: Container(
-              height: MediaQuery.of(context).size.height*095,
-              width: MediaQuery.of(context).size.width*1,
-              decoration: BoxDecoration(
-                color: AppColor.greyColor,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
+      mobile: Container(
+        height: MediaQuery.of(context).size.height * 095,
+        width: MediaQuery.of(context).size.width * 1,
+        decoration: BoxDecoration(
+          color: AppColor.greyColor,
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Image.asset(
+              AppAssets.mainImage,
+              scale: 17,
+            ),
+          ],
+        ),
+      ),
+      tablet: Container(
+        height: MediaQuery.of(context).size.height * 0.95,
+        width: MediaQuery.of(context).size.width * 1,
+        color: AppColor.blackColor,
+      ),
+      desktop: Container(
+        height: MediaQuery.of(context).size.height * 0.95,
+        width: MediaQuery.of(context).size.width * 1,
+        color: AppColor.lightGreyColor,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 50),
+          child: Row(
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Image.asset(AppAssets.mainImage,scale: 17,),
-              ],),
-            ),
-            tablet: Container(
-              height: MediaQuery.of(context).size.height*0.95,
-              width: MediaQuery.of(context).size.width*1,
-              color: AppColor.blackColor,
-            ),
-            desktop: Container(
-              height: MediaQuery.of(context).size.height*0.95,
-              width: MediaQuery.of(context).size.width*1,
-              color: AppColor.lightGreyColor,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 50,vertical: 50),
-                child: Row(
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        // SizedBox(height: 100,),
-                        Row(children: [
-                          TextWidget(text: "Hello,", color: AppColor.whiteColor,
-                              fontsize: 20, fontWeight: FontWeight.w600),
-                          TextWidget(text: "I'm", color: AppColor.redColor,
-                              fontsize: 20, fontWeight: FontWeight.w600)
-                        ],),
-                        TextWidget(text: "Hafiz Muhammad Abd Ur Rehman",
-                            color: AppColor.whiteColor, fontsize: 30,
-                            fontWeight: FontWeight.w600),
-                        SizedBox(height: 5,),
-                        TextWidget(text: "Flutter Designer And Flutter Developer",
-                            color: AppColor.whiteColor, fontsize: 25,
-                            fontWeight: FontWeight.w600),
-                        SizedBox(height: 20,),
-                        TextWidget(text: "I’m a Flutter Developer and UI/UX Designer specializing in creating high-quality, \n "
-                            "cross-platform mobile apps. I combine clean code with intuitive design to  build \n "
-                            "fast, responsive, and user-friendly applications.My goal is to deliver seamless \n "
-                            "digital experiences that meet both user needs and business goals.",
-                            color: AppColor.whiteColor, fontsize: 14, fontWeight: FontWeight.w600),
-                        SizedBox(height: 30,),
-                        TextWidget(text: "FIND ME ON",
-                            color: AppColor.whiteColor, fontsize: 20,
-                            fontWeight: FontWeight.w600),
-                        SizedBox(height: 20,),
-                        Row(children: [
-                          GestureDetector(
-                            onTap: (){},
-                            child: Smallbutton(child: Icon(
-                              Icons.facebook_outlined,
-                              color: AppColor.whiteColor,),),
+                  // SizedBox(height: 100,),
+                  Row(
+                    children: [
+                      TextWidget(
+                          text: "Hello,",
+                          color: AppColor.whiteColor,
+                          fontsize: 20,
+                          fontWeight: FontWeight.w600),
+                      TextWidget(
+                          text: "I'm",
+                          color: AppColor.redColor,
+                          fontsize: 20,
+                          fontWeight: FontWeight.w600)
+                    ],
+                  ),
+                  TextWidget(
+                      text: "Hafiz Muhammad Abd Ur Rehman",
+                      color: AppColor.whiteColor,
+                      fontsize: 30,
+                      fontWeight: FontWeight.w600),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  TextWidget(
+                      text: "Flutter Designer And Flutter Developer",
+                      color: AppColor.whiteColor,
+                      fontsize: 25,
+                      fontWeight: FontWeight.w600),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextWidget(
+                      text:
+                          "I’m a Flutter Developer and UI/UX Designer specializing in creating high-quality, \n "
+                          "cross-platform mobile apps. I combine clean code with intuitive design to  build \n "
+                          "fast, responsive, and user-friendly applications.My goal is to deliver seamless \n "
+                          "digital experiences that meet both user needs and business goals.",
+                      color: AppColor.whiteColor,
+                      fontsize: 14,
+                      fontWeight: FontWeight.w600),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  TextWidget(
+                      text: "FIND ME ON",
+                      color: AppColor.whiteColor,
+                      fontsize: 20,
+                      fontWeight: FontWeight.w600),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          controller.UrlLauncher("http://www.facebook.com/rehman.khan.979137");
+                        },
+                        child: Smallbutton(
+                          child: Icon(
+                            Icons.facebook_outlined,
+                            color: AppColor.whiteColor,
                           ),
-                          SizedBox(width: 10,),
-                          GestureDetector(
-                            onTap: (){},
-                            child: Smallbutton(child: FaIcon(
-                              FontAwesomeIcons.twitter,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          controller.UrlLauncher("http://www.twitter.com/RehmanK72010926");
+                        },
+                        child: Smallbutton(
+                          child: FaIcon(
+                            FontAwesomeIcons.twitter,
+                            color: AppColor.whiteColor,
+                            size: 20,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          controller.UrlLauncher(
+                              "http://www.linkedin.com/in/rehman-khan-722142354");
+                        },
+                        child: Smallbutton(
+                          child: FaIcon(
+                            FontAwesomeIcons.linkedin,
+                            color: AppColor.whiteColor,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      InkWell(
+                        onTap: () {
+                          controller.UrlLauncher("http://www.instagram.com/rehman12870");
+                        },
+                        child: Smallbutton(
+                          child: FaIcon(
+                            FontAwesomeIcons.instagram,
+                            color: AppColor.whiteColor,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          TextWidget(
+                              text: "1+",
                               color: AppColor.whiteColor,
-                              size: 20,
-                            ),),
+                              fontsize: 16,
+                              fontWeight: FontWeight.w600),
+                          SizedBox(
+                            height: 10,
                           ),
-                          SizedBox(width: 10,),
-                          InkWell(
-                            onTap: (){
-                              GoRoutes.Page2Screen;
-                              setState(() {
-
-                              });
-                            },
-                            child: Smallbutton(child: FaIcon(
-                              FontAwesomeIcons.linkedin,
-                              color: AppColor.whiteColor,),),
+                          TextWidget(
+                              text: "YEAR OF EXPERIENCE",
+                              color: AppColor.whiteColor,
+                              fontsize: 8,
+                              fontWeight: FontWeight.w400)
+                        ],
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          TextWidget(
+                              text: "5+",
+                              color: AppColor.whiteColor,
+                              fontsize: 16,
+                              fontWeight: FontWeight.w600),
+                          SizedBox(
+                            height: 10,
                           ),
-                          SizedBox(width: 10,),
-                          InkWell(
-                            onTap: (){},
-                            child: Smallbutton(child: FaIcon(
-                              FontAwesomeIcons.youtube,
-                              color: AppColor.whiteColor,),),
-                          )
-                        ],),
-                        SizedBox(height: 20,),
-                        Row(
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                TextWidget(text: "1+", color: AppColor.whiteColor,
-                                    fontsize: 16, fontWeight: FontWeight.w600),
-                                SizedBox(height: 10,),
-                                TextWidget(text: "YEAR OF EXPERIENCE",
-                                    color: AppColor.whiteColor, fontsize: 8,
-                                    fontWeight: FontWeight.w400)
-                              ],
-                            ),
-                            SizedBox(width: 10,),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                TextWidget(text: "5+", color: AppColor.whiteColor,
-                                    fontsize: 16, fontWeight: FontWeight.w600),
-                                SizedBox(height: 10,),
-                                TextWidget(text: "GLOBAL WORKING CLIENT",
-                                    color: AppColor.whiteColor, fontsize: 8,
-                                    fontWeight: FontWeight.w400)
-                              ],
-                            ),
-                            SizedBox(width: 10,),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                TextWidget(text: "3+", color: AppColor.whiteColor,
-                                    fontsize: 16, fontWeight: FontWeight.w600),
-                                SizedBox(height: 10,),
-                                TextWidget(text: "AWARDS WIN",
-                                    color: AppColor.whiteColor, fontsize: 8,
-                                    fontWeight: FontWeight.w400)
-                              ],)
-                          ],
-                        )
-
-                      ],),
-                    Spacer(),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Image.asset(AppAssets.mainImage,scale: 5,)
-                      ],)
-                  ],
-                ),
+                          TextWidget(
+                              text: "GLOBAL WORKING CLIENT",
+                              color: AppColor.whiteColor,
+                              fontsize: 8,
+                              fontWeight: FontWeight.w400)
+                        ],
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          TextWidget(
+                              text: "3+",
+                              color: AppColor.whiteColor,
+                              fontsize: 16,
+                              fontWeight: FontWeight.w600),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          TextWidget(
+                              text: "AWARDS WIN",
+                              color: AppColor.whiteColor,
+                              fontsize: 8,
+                              fontWeight: FontWeight.w400)
+                        ],
+                      )
+                    ],
+                  )
+                ],
               ),
-            ),
-        )
-    );
+              Spacer(),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Image.asset(
+                    AppAssets.mainImage,
+                    scale: 5,
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    ));
   }
 }
