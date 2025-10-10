@@ -1,3 +1,3 @@
 class AppAssets{
-  static String mainImage = "assets/img.jpg";
+  static String mainImage = "assets/rehman.png";
 }

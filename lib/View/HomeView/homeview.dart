@@ -29,37 +29,45 @@ class HomeScreen extends StatelessWidget {
         titleSpacing: 0,
         toolbarHeight: 60,
         backgroundColor: AppColor.greyColor,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            NavButton(
+        title: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              NavButton(
                 name: "HOME",
                 index: 0,
                 selectedIndex: controller.selectedIndex,
-                onTap: () => controller.changepage(0)),
-            NavButton(
+                onTap: () => controller.changepage(0),
+              ),
+              NavButton(
                 name: "SERVICES",
                 index: 1,
                 selectedIndex: controller.selectedIndex,
-                onTap: () => controller.changepage(1)),
-            NavButton(
+                onTap: () => controller.changepage(1),
+              ),
+              NavButton(
                 name: "PORTFOLIO",
                 index: 2,
                 selectedIndex: controller.selectedIndex,
-                onTap: () => controller.changepage(2)),
-            NavButton(
+                onTap: () => controller.changepage(2),
+              ),
+              NavButton(
                 name: "RESUME",
                 index: 3,
                 selectedIndex: controller.selectedIndex,
-                onTap: () => controller.selectedIndex(3)),
-            NavButton(
+                onTap: () => controller.changepage(3),
+              ),
+              NavButton(
                 name: "CONTACT",
                 index: 4,
                 selectedIndex: controller.selectedIndex,
-                onTap: () => controller.changepage(4))
-          ],
+                onTap: () => controller.changepage(4),
+              ),
+            ],
+          ),
         ),
       ),
+
       body: Obx(() => pages[controller.selectedIndex.value]),
     );
   }

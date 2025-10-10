@@ -11,7 +11,7 @@ class SmallContainerWidget extends StatelessWidget {
         height: MediaQuery.of(context).size.height*0.17,
         width: MediaQuery.of(context).size.width*0.2,
       decoration: BoxDecoration(
-          color: AppColor.greyColor,
+          color: AppColor.lightGreyColor,
           border: Border.all(color: AppColor.lightGreyColor),
           borderRadius: BorderRadius.circular(8)
       ),child: child,

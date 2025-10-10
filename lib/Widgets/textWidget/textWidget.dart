@@ -11,7 +11,9 @@ class TextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text,style: GoogleFonts.poppins(
+    return Text(text,softWrap: true,
+      overflow: TextOverflow.visible,
+      style: GoogleFonts.poppins(
       color: color, fontSize: fontsize,
       fontWeight: fontWeight
     ),);
