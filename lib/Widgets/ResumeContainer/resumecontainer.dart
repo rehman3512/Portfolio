@@ -9,6 +9,8 @@ class ResumeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       // height: MediaQuery.of(context).size.height * 0.25,
+      // width: MediaQuery.of(context).size.width * 0.50,
+      height: 200,
       width: 400,
       decoration: BoxDecoration(
         color: AppColor.lightGreyColor,
