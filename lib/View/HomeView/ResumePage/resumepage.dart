@@ -45,12 +45,12 @@ class ResumePage extends StatelessWidget {
                                       TextWidget(
                                           text: "Job Experience",
                                           color: AppColor.whiteColor,
-                                          fontsize: 28,
+                                          fontsize: 20,
                                           fontWeight: FontWeight.w400),
                                       TextWidget(
                                           text: "2024-2025",
                                           color: AppColor.redColor,
-                                          fontsize: 16,
+                                          fontsize: 12,
                                           fontWeight: FontWeight.w400),
                                       SizedBox(
                                         height: 40,
@@ -87,14 +87,14 @@ class ResumePage extends StatelessWidget {
                                                                   TextWidget(
                                                                       text: "Flutter Development",
                                                                       color: AppColor.whiteColor,
-                                                                      fontsize: 16,
+                                                                      fontsize: 14,
                                                                       fontWeight:
                                                                       FontWeight.w400),
                                                                   TextWidget(
                                                                       text:
                                                                       "Bismillah IT Collage(2024-2025)",
                                                                       color: AppColor.whiteColor,
-                                                                      fontsize: 12,
+                                                                      fontsize: 10,
                                                                       fontWeight:
                                                                       FontWeight.w200),
                                                                   SizedBox(
@@ -106,7 +106,7 @@ class ResumePage extends StatelessWidget {
                                                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
                                                                         "Odit maxime laborum sequi, magni earum quo soluta sint velit numquam.",
                                                                     color: AppColor.whiteColor,
-                                                                    fontsize: 10,
+                                                                    fontsize: 8,
                                                                     fontWeight: FontWeight.w200,
                                                                   ),
                                                                 ],
@@ -129,12 +129,12 @@ class ResumePage extends StatelessWidget {
                                       TextWidget(
                                           text: "Education Quality",
                                           color: AppColor.whiteColor,
-                                          fontsize: 28,
+                                          fontsize: 20,
                                           fontWeight: FontWeight.w400),
                                       TextWidget(
                                           text: "2024-2028",
                                           color: AppColor.redColor,
-                                          fontsize: 16,
+                                          fontsize: 12,
                                           fontWeight: FontWeight.w400),
                                       SizedBox(
                                         height: 40,
@@ -170,14 +170,14 @@ class ResumePage extends StatelessWidget {
                                                                   TextWidget(
                                                                       text: "Flutter Development",
                                                                       color: AppColor.whiteColor,
-                                                                      fontsize: 16,
+                                                                      fontsize: 14,
                                                                       fontWeight:
                                                                       FontWeight.w400),
                                                                   TextWidget(
                                                                       text:
                                                                       "Bismillah IT Collage(2024-2025)",
                                                                       color: AppColor.whiteColor,
-                                                                      fontsize: 12,
+                                                                      fontsize: 10,
                                                                       fontWeight:
                                                                       FontWeight.w200),
                                                                   SizedBox(
@@ -189,7 +189,7 @@ class ResumePage extends StatelessWidget {
                                                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
                                                                         "Odit maxime laborum sequi, magni earum quo soluta sint velit numquam.",
                                                                     color: AppColor.whiteColor,
-                                                                    fontsize: 10,
+                                                                    fontsize: 8,
                                                                     fontWeight: FontWeight.w200,
                                                                   ),
                                                                 ],
