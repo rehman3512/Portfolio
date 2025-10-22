@@ -29,21 +29,6 @@ class LastPage extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                   const SizedBox(height: 8),
-                  TextWidget(
-                    text: "Contact With Me",
-                    color: AppColor.whiteColor,
-                    fontsize: 24,
-                    fontWeight: FontWeight.w600,
-                  ),
-                  const SizedBox(height: 30),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          SmallContainerWidget(
         // mobile: Container(
         //   height: MediaQuery.of(context).size.height * 0.95,
         //   width: MediaQuery.of(context).size.width * 1,
