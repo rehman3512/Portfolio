@@ -22,13 +22,6 @@ class LastPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  TextWidget(
-                    text: "CONTACT",
-                    color: AppColor.redColor,
-                    fontsize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
-                  const SizedBox(height: 8),
         // mobile: Container(
         //   height: MediaQuery.of(context).size.height * 0.95,
         //   width: MediaQuery.of(context).size.width * 1,
