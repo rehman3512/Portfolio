@@ -11,9 +11,6 @@ class LastPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ResponseWidget(
-        mobile: Container(
-          height: MediaQuery.of(context).size.height * 0.95,
-          width: MediaQuery.of(context).size.width * 1,
         // mobile: Container(
         //   height: MediaQuery.of(context).size.height * 0.95,
         //   width: MediaQuery.of(context).size.width * 1,
