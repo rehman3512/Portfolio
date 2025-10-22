@@ -14,14 +14,6 @@ class LastPage extends StatelessWidget {
         mobile: Container(
           height: MediaQuery.of(context).size.height * 0.95,
           width: MediaQuery.of(context).size.width * 1,
-          color: AppColor.greyColor,
-          child: SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.all(30.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
         // mobile: Container(
         //   height: MediaQuery.of(context).size.height * 0.95,
         //   width: MediaQuery.of(context).size.width * 1,
