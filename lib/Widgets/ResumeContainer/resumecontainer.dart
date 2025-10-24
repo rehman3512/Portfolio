@@ -37,7 +37,7 @@ class ResumeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponseWidget(
       // 📱 Mobile layout
-      mobile: _buildContainer(widthFactor: 0.9),
+      mobile: _buildContainer(widthFactor: 0.92),
 
       // 💻 Tablet layout
       tablet: _buildContainer(widthFactor: 0.7),
@@ -54,7 +54,7 @@ class ResumeContainer extends StatelessWidget {
         final screenWidth = constraints.maxWidth;
         return Container(
           // ✅ Height fixed safely (no MediaQuery height — no infinite errors)
-          height: 200,
+          height: 220,
           width: screenWidth * widthFactor,
           decoration: BoxDecoration(
             color: AppColor.lightGreyColor,
