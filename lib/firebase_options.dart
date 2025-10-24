@@ -61,4 +61,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'rehman-portfolio-5beaa.firebasestorage.app',
     measurementId: 'G-DGTVFSWFLK',
   );
+
 }
