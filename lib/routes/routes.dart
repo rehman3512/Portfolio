@@ -12,7 +12,7 @@ class GoRoutes {
   static final String homeScreen = "/HomeScreen";
 
   static final GoRouter router = GoRouter(
-    initialLocation: homeScreen,
+    initialLocation: page1screen,
       routes: [
         GoRoute(path: page1screen,builder: (context,state)=> Page1()),
         GoRoute(path: page2screen,builder: (context,state)=> Page2()),
