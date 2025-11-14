@@ -12,6 +12,6 @@ class AppColor{
   static Color purpleColor = Color(0xFF800080);
   static final Color lightPurpleColor = Color(0xFFD8BFD8);
   static Color greenColor = Color(0xFF008000);
-  // static Color yellowColor = Color(0xFFFFD700);
+  static Color yellowColor = Color(0xFFFFD700);
 
 }
